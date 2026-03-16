@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "key": "heroImage",
+    "url": "/images/opt/hero-1.jpg",
+    "alt": "صورة الهيرو",
+    "category": "home",
+    "sortOrder": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "key": "heroImageMobile",
+    "url": "/images/opt/hero-1-mobile.jpg",
+    "alt": "صورة الهيرو للموبايل",
+    "category": "home",
+    "sortOrder": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "key": "aboutImage",
+    "url": "/images/opt/portrait-1.jpg",
+    "alt": "صورة صفحة من أنا",
+    "category": "about",
+    "sortOrder": 3,
+    "offsetX": 0,
+    "offsetY": 0,
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  }
+]

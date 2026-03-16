@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "key": "phone",
+    "value": "+2 01011511561",
+    "label": "رقم الهاتف",
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "key": "whatsapp",
+    "value": "201011511561",
+    "label": "رقم الواتساب",
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "key": "email",
+    "value": "Badrabdoph@icloud.com",
+    "label": "البريد الإلكتروني",
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "key": "location",
+    "value": "مصر (متاح للسفر للمحافظات)",
+    "label": "الموقع",
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "key": "instagram",
+    "value": "https://www.instagram.com/badr_abdo_ph",
+    "label": "رابط إنستجرام",
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "key": "facebook",
+    "value": "https://www.facebook.com/badrabdophoto",
+    "label": "رابط فيسبوك",
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 7,
+    "key": "tiktok",
+    "value": "https://www.tiktok.com/@badr_abdo_ph?_r=1&_t=ZS-93VLFDPD2cH",
+    "label": "رابط تيك توك",
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  }
+]

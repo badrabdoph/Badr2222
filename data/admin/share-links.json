@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1772232681186,
+    "code": "vksc",
+    "note": null,
+    "expiresAt": "2026-02-28T22:51:20.956Z",
+    "createdAt": "2026-02-27T22:51:20.956Z",
+    "updatedAt": "2026-02-27T23:12:01.893Z",
+    "revokedAt": "2026-02-27T23:12:01.893Z"
+  },
+  {
+    "id": 1772233925220,
+    "code": "nf6s",
+    "note": null,
+    "expiresAt": "2026-02-28T23:12:04.272Z",
+    "createdAt": "2026-02-27T23:12:04.272Z",
+    "updatedAt": "2026-02-27T23:12:04.272Z",
+    "revokedAt": null
+  },
+  {
+    "id": 1772325022823,
+    "code": "3ru3",
+    "note": null,
+    "expiresAt": null,
+    "createdAt": "2026-03-01T00:30:22.651Z",
+    "updatedAt": "2026-03-01T00:30:22.651Z",
+    "revokedAt": null
+  },
+  {
+    "id": 1772397843473,
+    "code": "j472",
+    "note": null,
+    "expiresAt": "2026-03-02T20:44:02.973Z",
+    "createdAt": "2026-03-01T20:44:02.973Z",
+    "updatedAt": "2026-03-01T20:44:02.973Z",
+    "revokedAt": null
+  },
+  {
+    "id": 1772574718074,
+    "code": "z7f2",
+    "note": null,
+    "expiresAt": "2026-03-06T21:51:57.472Z",
+    "createdAt": "2026-03-03T21:51:57.473Z",
+    "updatedAt": "2026-03-05T22:31:11.494Z",
+    "revokedAt": "2026-03-05T22:31:11.494Z"
+  },
+  {
+    "id": 1772665290186,
+    "code": "5d9t",
+    "note": null,
+    "expiresAt": "2026-03-05T23:01:29.838Z",
+    "createdAt": "2026-03-04T23:01:29.838Z",
+    "updatedAt": "2026-03-05T22:30:58.751Z",
+    "revokedAt": "2026-03-05T22:30:58.751Z"
+  },
+  {
+    "id": 1772713413857,
+    "code": "98xb",
+    "note": null,
+    "expiresAt": "2026-03-06T12:23:33.560Z",
+    "createdAt": "2026-03-05T12:23:33.561Z",
+    "updatedAt": "2026-03-05T22:30:50.522Z",
+    "revokedAt": "2026-03-05T22:30:50.522Z"
+  },
+  {
+    "id": 1772749886497,
+    "code": "pzrw",
+    "note": null,
+    "expiresAt": "2026-03-08T22:31:26.152Z",
+    "createdAt": "2026-03-05T22:31:26.152Z",
+    "updatedAt": "2026-03-05T22:31:26.152Z",
+    "revokedAt": null
+  },
+  {
+    "id": 1773014740813,
+    "code": "qxqs",
+    "note": null,
+    "expiresAt": "2026-03-12T00:05:40.418Z",
+    "createdAt": "2026-03-09T00:05:40.418Z",
+    "updatedAt": "2026-03-10T01:08:36.322Z",
+    "revokedAt": "2026-03-10T01:08:36.322Z"
+  },
+  {
+    "id": 1773014822118,
+    "code": "ychz",
+    "note": null,
+    "expiresAt": "2026-03-09T05:07:01.328Z",
+    "createdAt": "2026-03-09T00:07:01.329Z",
+    "updatedAt": "2026-03-09T00:07:01.329Z",
+    "revokedAt": null
+  },
+  {
+    "id": 1773060766935,
+    "code": "a2xm",
+    "note": null,
+    "expiresAt": "2026-03-12T12:52:46.760Z",
+    "createdAt": "2026-03-09T12:52:46.761Z",
+    "updatedAt": "2026-03-10T01:08:43.102Z",
+    "revokedAt": "2026-03-10T01:08:43.102Z"
+  },
+  {
+    "id": 1773104928176,
+    "code": "x3xw",
+    "note": null,
+    "expiresAt": "2026-03-13T01:08:48.172Z",
+    "createdAt": "2026-03-10T01:08:48.172Z",
+    "updatedAt": "2026-03-10T01:08:48.172Z",
+    "revokedAt": null
+  },
+  {
+    "id": 1773436164085,
+    "code": "6ajq",
+    "note": null,
+    "expiresAt": "2026-03-14T21:09:23.848Z",
+    "createdAt": "2026-03-13T21:09:23.853Z",
+    "updatedAt": "2026-03-13T21:09:23.853Z",
+    "revokedAt": null
+  },
+  {
+    "id": 1773501784197,
+    "code": "5kzj",
+    "note": null,
+    "expiresAt": "2026-03-17T15:23:04.048Z",
+    "createdAt": "2026-03-14T15:23:04.048Z",
+    "updatedAt": "2026-03-14T15:23:04.048Z",
+    "revokedAt": null
+  },
+  {
+    "id": 1773575557234,
+    "code": "pw7z",
+    "note": null,
+    "expiresAt": "2026-03-16T11:52:36.878Z",
+    "createdAt": "2026-03-15T11:52:36.879Z",
+    "updatedAt": "2026-03-15T11:52:36.879Z",
+    "revokedAt": null
+  }
+]

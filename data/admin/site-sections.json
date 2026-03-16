@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "key": "hero",
+    "name": "القسم الرئيسي (Hero)",
+    "visible": true,
+    "sortOrder": 1,
+    "page": "home",
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "key": "about_preview",
+    "name": "قسم من أنا",
+    "visible": true,
+    "sortOrder": 2,
+    "page": "home",
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "key": "portfolio_preview",
+    "name": "معرض الأعمال",
+    "visible": true,
+    "sortOrder": 3,
+    "page": "home",
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "key": "services_preview",
+    "name": "الخدمات",
+    "visible": true,
+    "sortOrder": 4,
+    "page": "home",
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "key": "testimonials",
+    "name": "آراء العملاء",
+    "visible": true,
+    "sortOrder": 5,
+    "page": "home",
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "key": "cta",
+    "name": "قسم الدعوة للتواصل",
+    "visible": true,
+    "sortOrder": 6,
+    "page": "home",
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  }
+]

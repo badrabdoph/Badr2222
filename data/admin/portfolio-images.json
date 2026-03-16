@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "لحظة الزفاف",
+    "url": "/images/opt/wedding-1.jpg",
+    "category": "wedding",
+    "visible": true,
+    "sortOrder": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "title": "تفاصيل الفرح",
+    "url": "/images/opt/wedding-2.jpg",
+    "category": "wedding",
+    "visible": true,
+    "sortOrder": 2,
+    "offsetX": 0,
+    "offsetY": 0,
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "title": "جلسة خارجية",
+    "url": "/images/opt/outdoor-1.jpg",
+    "category": "outdoor",
+    "visible": true,
+    "sortOrder": 3,
+    "offsetX": 0,
+    "offsetY": 0,
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "title": "بورتريه أبيض وأسود",
+    "url": "/images/opt/bw-1.jpg",
+    "category": "portrait",
+    "visible": true,
+    "sortOrder": 4,
+    "offsetX": 0,
+    "offsetY": 0,
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "title": "الساعة الذهبية",
+    "url": "/images/opt/golden-1.jpg",
+    "category": "outdoor",
+    "visible": true,
+    "sortOrder": 5,
+    "offsetX": 0,
+    "offsetY": 0,
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "title": "بورتريه فني",
+    "url": "/images/opt/portrait-1.jpg",
+    "category": "portrait",
+    "visible": true,
+    "sortOrder": 6,
+    "offsetX": 0,
+    "offsetY": 0,
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 7,
+    "title": "لحظة رومانسية",
+    "url": "/images/opt/hero-1.jpg",
+    "category": "wedding",
+    "visible": true,
+    "sortOrder": 7,
+    "offsetX": 0,
+    "offsetY": 0,
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  },
+  {
+    "id": 8,
+    "title": "جلسة مميزة",
+    "url": "/images/opt/hero-2.jpg",
+    "category": "outdoor",
+    "visible": true,
+    "sortOrder": 8,
+    "offsetX": 0,
+    "offsetY": 0,
+    "createdAt": "2026-03-14T00:00:00.000Z",
+    "updatedAt": "2026-03-14T00:00:00.000Z"
+  }
+]
