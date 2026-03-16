@@ -143,6 +143,43 @@ export const servicesStyles = `
           font-variant-numeric: tabular-nums;
           letter-spacing: 0.02em;
         }
+        .price-stack {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 6px;
+        }
+        .price-old,
+        .price-new {
+          display: inline-flex;
+          align-items: baseline;
+          gap: 6px;
+          line-height: 1.1;
+        }
+        .price-old {
+          font-size: 0.75rem;
+          font-weight: 600;
+          color: rgba(255,235,200,0.7);
+          text-shadow: none;
+          letter-spacing: 0.01em;
+        }
+        .price-old-label,
+        .price-new-label {
+          font-size: 9px;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          color: rgba(255,220,170,0.75);
+          text-shadow: none;
+        }
+        .price-old-value {
+          text-decoration: line-through;
+          text-decoration-thickness: 1.5px;
+          text-decoration-color: rgba(255,200,140,0.75);
+          font-variant-numeric: tabular-nums;
+        }
+        .price-new-value {
+          font-variant-numeric: tabular-nums;
+        }
         .custom-step-tag {
           display: inline-flex;
           align-items: center;

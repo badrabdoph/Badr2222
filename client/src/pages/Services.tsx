@@ -155,6 +155,17 @@ function extractPriceUnit(raw?: string) {
   return raw.replace(/[0-9.,\s]/g, "").trim();
 }
 
+const OLD_PRICE_DELTA = 200;
+
+function buildOldPrice(raw?: string, delta = OLD_PRICE_DELTA) {
+  if (!raw) return "";
+  const base = parsePriceValue(raw);
+  if (base === null) return "";
+  const unit = extractPriceUnit(raw);
+  const next = base + delta;
+  return `${formatPriceNumber(next)}${unit}`;
+}
+
 const customPrintItems = customPrintGroups.reduce((acc, group) => {
   if (Array.isArray(group.items)) {
     acc.push(...group.items);
@@ -296,6 +307,10 @@ export function PackageCard({
     asText(contentMap[key] as string | undefined, fallback);
   const badgeValue = (contentMap[`${baseKey}_badge`] ?? pkg.badge) as string | undefined;
   const customDescription = getValue(`${baseKey}_description`, pkg.description ?? "").trim();
+  const currentPriceText = getValue(`${baseKey}_price`, pkg.price ?? "").trim();
+  const computedOldPrice = buildOldPrice(currentPriceText);
+  const oldPriceValue = getValue(`${baseKey}_old_price`, computedOldPrice).trim();
+  const hasOldPrice = oldPriceValue.length > 0;
   const [localCustomIds, setLocalCustomIds] = useState<string[]>([]);
   const [customQuantities, setCustomQuantities] = useState<Record<string, number>>({});
   const [isExpanded, setIsExpanded] = useState(!isCollapsible);
@@ -458,14 +473,31 @@ export function PackageCard({
       ) : null}
 
       {isSessionCard ? (
-        <div className="price-corner package-price">
-          <EditableText
-            value={contentMap[`${baseKey}_price`]}
-            fallback={pkg.price}
-            fieldKey={`${baseKey}_price`}
-            category="services"
-            label={`سعر الباقة ${pkg.name}`}
-          />
+        <div className="price-corner package-price price-stack">
+          {hasOldPrice ? (
+            <div className="price-old">
+              <span className="price-old-label">السعر القديم</span>
+              <EditableText
+                value={contentMap[`${baseKey}_old_price`]}
+                fallback={computedOldPrice}
+                fieldKey={`${baseKey}_old_price`}
+                category="services"
+                label={`السعر القديم ${pkg.name}`}
+                className="price-old-value"
+              />
+            </div>
+          ) : null}
+          <div className="price-new">
+            {hasOldPrice ? <span className="price-new-label">السعر الحالي</span> : null}
+            <EditableText
+              value={contentMap[`${baseKey}_price`]}
+              fallback={pkg.price}
+              fieldKey={`${baseKey}_price`}
+              category="services"
+              label={`سعر الباقة ${pkg.name}`}
+              className="price-new-value"
+            />
+          </div>
           {(contentMap[`${baseKey}_price_note`] ?? pkg.priceNote) ? (
             <span className="price-corner-note">
               <EditableText
@@ -622,14 +654,31 @@ export function PackageCard({
               </div>
             ) : !isSessionCard ? (
               <>
-                <div className="text-primary font-bold text-2xl md:text-3xl leading-none package-price">
-                  <EditableText
-                    value={contentMap[`${baseKey}_price`]}
-                    fallback={pkg.price}
-                    fieldKey={`${baseKey}_price`}
-                    category="services"
-                    label={`سعر الباقة ${pkg.name}`}
-                  />
+                <div className="price-stack">
+                  {hasOldPrice ? (
+                    <div className="price-old">
+                      <span className="price-old-label">السعر القديم</span>
+                      <EditableText
+                        value={contentMap[`${baseKey}_old_price`]}
+                        fallback={computedOldPrice}
+                        fieldKey={`${baseKey}_old_price`}
+                        category="services"
+                        label={`السعر القديم ${pkg.name}`}
+                        className="price-old-value"
+                      />
+                    </div>
+                  ) : null}
+                  <div className="price-new text-primary font-bold text-2xl md:text-3xl leading-none package-price">
+                    {hasOldPrice ? <span className="price-new-label">السعر الحالي</span> : null}
+                    <EditableText
+                      value={contentMap[`${baseKey}_price`]}
+                      fallback={pkg.price}
+                      fieldKey={`${baseKey}_price`}
+                      category="services"
+                      label={`سعر الباقة ${pkg.name}`}
+                      className="price-new-value"
+                    />
+                  </div>
                 </div>
                 {(contentMap[`${baseKey}_price_note`] ?? pkg.priceNote) ? (
                   <div className={["text-xs mt-2", vip ? "text-primary/90" : "text-muted-foreground"].join(" ")}>

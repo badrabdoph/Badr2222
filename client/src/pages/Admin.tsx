@@ -1907,7 +1907,7 @@ function HiddenEditsManager({ onRefresh }: ManagerProps) {
       };
     }
     const fieldMatch = key.match(
-      /^package_(\d+)_(name|price|description|badge|price_note|popular_label|vip_label)$/
+      /^package_(\d+)_(name|price|old_price|description|badge|price_note|popular_label|vip_label)$/
     );
     if (fieldMatch) {
       return {
@@ -1923,6 +1923,7 @@ function HiddenEditsManager({ onRefresh }: ManagerProps) {
     if (field === "feature") return `سطر ${line}`;
     if (field === "name") return "اسم الباقة";
     if (field === "price") return "سعر الباقة";
+    if (field === "old_price") return "السعر القديم";
     if (field === "description") return "وصف الباقة";
     if (field === "badge") return "شارة الباقة";
     if (field === "price_note") return "ملاحظة السعر";

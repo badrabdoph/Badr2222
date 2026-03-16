@@ -114,6 +114,52 @@ const isCustomPackage = (pkg: PackageLike) => {
   return false;
 };
 
+const OLD_PRICE_DELTA = 200;
+
+const parsePriceValue = (raw?: string) => {
+  if (!raw) return null;
+  let v = raw;
+  v = v.replace(/٬/g, "").replace(/٫/g, ".");
+  const cleaned = v.replace(/[^0-9.,-]/g, "");
+  if (!cleaned) return null;
+  let normalized = cleaned;
+  const hasDot = normalized.includes(".");
+  const hasComma = normalized.includes(",");
+  if (hasDot && hasComma) {
+    normalized = normalized.replace(/,/g, "");
+  } else if (!hasDot && hasComma) {
+    if (/\d+,\d{3}/.test(normalized)) {
+      normalized = normalized.replace(/,/g, "");
+    } else {
+      normalized = normalized.replace(/,/g, ".");
+    }
+  }
+  const match = normalized.match(/-?\d+(\.\d+)?/);
+  if (!match) return null;
+  const num = Number(match[0]);
+  return Number.isFinite(num) ? num : null;
+};
+
+const formatPriceNumber = (value: number) => {
+  if (!Number.isFinite(value)) return "";
+  const rounded = Math.round(value * 100) / 100;
+  return Number.isInteger(rounded) ? String(rounded) : String(rounded);
+};
+
+const extractPriceUnit = (raw?: string) => {
+  if (!raw) return "";
+  return raw.replace(/[0-9.,\s]/g, "").trim();
+};
+
+const buildOldPrice = (raw?: string, delta = OLD_PRICE_DELTA) => {
+  if (!raw) return "";
+  const base = parsePriceValue(raw);
+  if (base === null) return "";
+  const unit = extractPriceUnit(raw);
+  const next = base + delta;
+  return `${formatPriceNumber(next)}${unit}`;
+};
+
 const guessCategory = (key: string) => {
   if (key.startsWith("home_") || key.startsWith("hero_")) return "home";
   if (key.startsWith("about_")) return "about";
@@ -591,6 +637,15 @@ export function buildContentCatalog({ packages, testimonials }: BuildOptions = {
       category: "services",
       label: `سعر الباقة ${name}`,
     });
+    const oldPriceFallback = buildOldPrice(String(pkg.price ?? ""));
+    if (oldPriceFallback) {
+      add({
+        key: `${baseKey}_old_price`,
+        fallback: oldPriceFallback,
+        category: "services",
+        label: `السعر القديم ${name}`,
+      });
+    }
     const descriptionFallback = isCustomPackage(pkg)
       ? "خصص باقتك علي زوقك"
       : String(pkg.description ?? "");
